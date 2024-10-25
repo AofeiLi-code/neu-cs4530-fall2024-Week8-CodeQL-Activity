@@ -7,8 +7,8 @@
 import javascript
 
 /**
- * Find tests that call a function called "pressActionKey" 
+ * Finds tests that call a function named "pressActionKey".
  */
-from FunctionCall fc, Function f
+from CallExpression fc, Function f
 where f.getName() = "pressActionKey" and fc.getCallee() = f
 select fc, "This test calls pressActionKey."
