@@ -9,6 +9,6 @@ import javascript
 /**
  * Finds functions that are longer than 10 lines.
  */
-from Function f
-where f.getNumLines() > 10
-select f, "This function is longer than 10 lines."
+from Function function
+where function.getNumLines() > 10
+select function, "is longer than 10 lines."
